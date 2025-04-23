@@ -58,7 +58,6 @@ gap: 20px;
 @media screen and (min-width:1280px){
     .div-hero-text{
        width: 597px;
-       height: 269px; 
     }
 }
 .title-hero{
@@ -74,6 +73,15 @@ gap: 20px;
     .title-hero{
         height: 180px;
         width: 557px;
+        font-size: 70px;
+        line-height: 0.86;
+        letter-spacing: -0.02em;
+        color: #0c0c0c;
+    }
+    .hero-span{
+        font-size: 70px;
+        line-height: 0.86;
+        letter-spacing: -0.02em;
     }
 }
 .hero-span{
