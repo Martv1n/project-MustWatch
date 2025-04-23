@@ -1,8 +1,73 @@
-<section>
-  <h1 class="cont-us">cont us</h1>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consectetur
-    reprehenderit! Suscipit impedit assumenda ullam ipsam velit et soluta
-    architecto.
-  </p>
+<section class="contact-us" id="contact-us">
+  <div class="contact-wrap">
+    <h2 class="contact-title">Contact Us</h2>
+    <div>
+      <form class="contact-form">
+        <p class="contact-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="contact-input name"
+          required
+          placeholder="Name"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="contact-input email"
+          required
+          placeholder="Email"
+        />
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          class="contact-input tel"
+          required
+          placeholder="+380"
+        />
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          class="contact-textarea"
+          placeholder="Comment"
+          required
+        ></textarea>
+        <button type="submit" class="contact-button">Send</button>
+      </form>
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ../img/section-contact/watch-desk.jpg    1x,
+            ../img/section-contact/watch-desk@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../img/section-contact/watch-tab.jpg    1x,
+            ../img/section-contact/watch-tab@2x.jpg 2x
+          "
+        />
+        <source
+          media="(mix-width: 320px)"
+          srcset="
+            ../img/section-contact/watch-mob.jpg    1x,
+            ../img/section-contact/watch-mob@2x.jpg 2x
+          "
+        />
+        <img
+          class="watch-img"
+          src="../img/section-contact/watch-desk.jpg"
+          alt="watch"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
