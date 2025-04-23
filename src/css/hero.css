@@ -1,21 +1,58 @@
+/*
+@media screen and (min-width:768px) { }
+
+@media screen and (min-width:1280px) { }
+*/
 
 .hero{
 padding-top: 60px;
 padding-bottom: 0;
 }
-.container{
+.container
+
+.container-hero{
 padding-left: 20px;
 padding-right: 20px;
 }
-.container-hero{
-
+@media screen and (min-width:768px){
+    .container-hero{
+        padding-top: 80px;
+        padding-right: 32px;
+        padding-left: 32px;
+        padding-bottom: 0;
+    }
 }
+.text-and-pic{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .div-hero-text{
 width: 335px;
 height: 206px;
 display: flex;
 flex-direction: column;
 align-items: start;
+padding-bottom: 28px;
+justify-content: flex-start;
+gap: 20px;
+}
+@media screen and (min-width:768px){
+    .div-hero-text{
+        max-width: 557px;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+}
+@media screen and (min-width:1280px){
+    .div-hero-text{
+       width: 597px;
+       height: 269px; 
+    }
 }
 .title-hero{
     font-family: "Gilroy", sans-serif;
@@ -47,11 +84,39 @@ width: 335px;
 
 
 .dev-hero-links{
-
+display: flex;
+flex-direction: row;
+gap: 155px;
+padding-bottom: 28px;
+align-items: flex-end;
+justify-content: flex-start;
 }
-/*
-<img src="" alt="">
-<picture class="hero-pic">*/
+.img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.hero-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    stroke-width: 2px;
+    stroke: #fbfbfb;
+    object-fit: cover;
+    margin-left: -10px;
+    box-shadow: 0 0 0 1px #ccc;
+    /* optional: outline for contrast */
+}
+
+.hero-pic:first-child {
+    margin-left: 0;
+    /* no overlap on the first image */
+}
 
 .hero-scroll{
     font-family: "Gilroy", sans-serif;
@@ -64,4 +129,5 @@ width: 335px;
     color: #0c0c0c;
     width: 72px;
     height: 18px;   
+
 }
