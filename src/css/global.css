@@ -71,7 +71,7 @@ color: #0c0c0c;
   }
 }
 
-.mobile-menu.is-open {
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
