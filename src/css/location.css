@@ -15,11 +15,6 @@
     }
 }
 
-.location-inner {
-    display: flex;
-    flex-direction: column;
-}
-
 .location-title {
     font-weight: 600;
     font-size: 32px;
@@ -38,7 +33,7 @@
 .map-container {
     margin-top: 24px;
     width: 100%;
-    height: 440px;
+    height: 500px;
     border-radius: 12px;
     overflow: hidden;
     background-color: #F3F3F3;
@@ -48,7 +43,7 @@
 
 @media screen and (min-width: 768px) {
     .maps-container {
-        height: 540px;
+        height: 480px;
         margin-top: 40px;
         padding: 50px 50px;
         border-radius: 50px;
