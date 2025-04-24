@@ -153,15 +153,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 10px;
   stroke: #fbfbfb;
 }
 
 .mob-menu-close-icon {
   stroke: #fbfbfb;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .mob-menu-btn:hover .mob-menu-close-icon,
@@ -225,12 +225,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #fbfbfb;
+  fill: rgba(
+    251,
+    251,
+    251,
+    0.3
+  ); /* Затемнений білий колір у спокійному стані */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Додаємо плавний перехід */
 }
 
 .mob-menu-social-list-item-link:hover,
 .mob-menu-social-list-item-link:focus {
-  fill: #fbfbfb;
+  fill: #fbfbfb; /* Звичайний білий колір при наведенні та фокусі */
 }
 
 /* ===== mobile (до 1279px) ===== */
