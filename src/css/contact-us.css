@@ -108,6 +108,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .contact-us {
+    padding: 40px 0px;
+  }
+
   .contact-title {
     font-size: 48px;
     line-height: 0.92;
@@ -154,6 +158,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .contact-us {
+    padding: 50px 0px;
+  }
   .contact-content {
     flex-direction: row;
     display: flex;
