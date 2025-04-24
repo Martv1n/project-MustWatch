@@ -1,9 +1,9 @@
 /* ===== header ===== */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
-    0 2px 1px rgba(46, 47, 66, 0.08);
-  position: fixed;
+  /* box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
+    0 2px 1px rgba(46, 47, 66, 0.08); */
+  /* position: fixed; */
   top: 0;
   width: 100%;
   background-color: var(--background);
@@ -217,15 +217,20 @@
 }
 
 .mob-menu-social-list-item-link {
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: #fbfbfb;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu-social-list-item-link:hover,
 .mob-menu-social-list-item-link:focus {
-  fill: #3350e9;
+  fill: #fbfbfb;
 }
 
 /* ===== mobile (до 1279px) ===== */
@@ -237,16 +242,16 @@
   }
 
   .container-header {
-    justify-content: space-between; /* Розміщуємо елементи по краях */
+    justify-content: space-between;
   }
 
   .mobile-menu-open-btn {
-    position: static; /* Забираємо абсолютне позиціонування */
-    margin-left: auto; /* Відсуваємо кнопку вправо */
+    position: static;
+    margin-left: auto;
   }
 
   .mob-menu-list {
-    gap: 32px; /* Змінено відступ на 32px */
+    gap: 32px;
   }
 }
 
@@ -277,7 +282,7 @@
   }
 
   .mob-menu-list {
-    gap: 32px; /* Змінено відступ на 32px */
+    gap: 32px;
   }
 
   .mob-menu-btn {
@@ -288,12 +293,12 @@
   }
 
   .container-header {
-    justify-content: space-between; /* Розміщуємо елементи по краях */
+    justify-content: space-between;
   }
 
   .mobile-menu-open-btn {
-    position: static; /* Забираємо абсолютне позиціонування */
-    margin-left: auto; /* Відсуваємо кнопку вправо */
+    position: static;
+    margin-left: auto;
   }
 }
 
@@ -306,7 +311,7 @@
 
   .mobile-menu-open-btn,
   .mob-menu {
-    display: none; /* Приховуємо кнопку на десктопі */
+    display: none;
   }
 
   .nav-list-item {
