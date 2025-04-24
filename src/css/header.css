@@ -1,9 +1,6 @@
 /* ===== header ===== */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  /* box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
-    0 2px 1px rgba(46, 47, 66, 0.08); */
-  /* position: fixed; */
   top: 0;
   width: 100%;
   background-color: var(--background);
@@ -14,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px; /* Додано відступи з боків */
+  padding: 20px 20px;
 }
 
 .logo-header {
@@ -30,7 +27,7 @@
   transform: scale(1.1);
   opacity: 0.8;
 }
-
+/* burger */
 .mobile-menu-open-btn {
   width: 34px;
   height: 34px;
@@ -39,13 +36,15 @@
   padding: 0;
   line-height: 0;
   fill: #2f2f37;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 100; /* Щоб кнопка була над іншими елементами */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Додали transition для transform */
+  z-index: 100;
 }
 
 .mobile-menu-open-btn:hover,
 .mobile-menu-open-btn:focus {
-  fill: #3350e9;
+  /* fill: #3350e9; */
+  transform: scale(1.1); /* Додали transform для збільшення розміру */
 }
 
 .svg-icon-menu {
@@ -135,7 +134,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  gap: 24px; /* Залишаємо цей відступ для загального контейнера */
+  gap: 24px;
 }
 
 .mob-menu-page {
@@ -173,10 +172,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px; /* Змінено відступ на 32px */
+  gap: 32px;
   color: #fbfbfb;
 }
-/* початок */
+
 .mob-menu-item-link {
   display: block;
   padding-bottom: 10px;
@@ -186,8 +185,8 @@
 
 .mob-menu-item-link:hover,
 .mob-menu-item-link:focus {
-  transform: scale(1.05); /* Збільшуємо текст */
-  font-weight: 700; /* Робимо текст жирнішим */
+  transform: scale(1.05);
+  font-weight: 700;
 }
 
 .mob-menu-item-link::after {
@@ -208,8 +207,6 @@
   opacity: 1;
 }
 
-/* кінець правок */
-
 .mob-menu-social-list {
   display: flex;
   gap: 10px;
@@ -225,18 +222,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: rgba(
-    251,
-    251,
-    251,
-    0.3
-  ); /* Затемнений білий колір у спокійному стані */
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Додаємо плавний перехід */
+  fill: rgba(251, 251, 251, 0.3);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-menu-social-list-item-link:hover,
+.mob-menu-social-list-item-link:hover {
+  fill: #fbfbfb;
+}
+
 .mob-menu-social-list-item-link:focus {
-  fill: #fbfbfb; /* Звичайний білий колір при наведенні та фокусі */
+  fill: #fbfbfb;
 }
 
 /* ===== mobile (до 1279px) ===== */
