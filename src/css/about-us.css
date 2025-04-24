@@ -123,5 +123,9 @@
     }
     .about-us-section-text:last-of-type {
         margin-bottom: 40px;     
-    }    
+    }
+        .about-us-section-button:hover,
+        .about-us-section-button:focus {
+        background-color: #1f3cd4;
+    }
     }
