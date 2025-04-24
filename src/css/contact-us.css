@@ -153,3 +153,23 @@
     border-radius: 50px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .contact-content {
+    flex-direction: row;
+    display: flex;
+  }
+  .content-section {
+    border-radius: 50px;
+    min-width: 580px;
+    height: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .img-watch img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    max-width: 530px;
+  }
+}
