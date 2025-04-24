@@ -63,7 +63,8 @@
     font-size: 14px;
     line-height: 1.28571;
     text-align: center;
-    color: #fbfbfb;   
+    color: #fbfbfb;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
 .about-us-section-button:active {
