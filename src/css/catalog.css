@@ -70,7 +70,6 @@ margin-bottom: 0;
 }
 
 .heets {
-    
     display: none;
 }
 
@@ -88,4 +87,17 @@ border-radius: 16px;
         line-height: 1.28571;
         text-align: center;
         color: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+.catalog-page {
+    width: 704px;
+        height: 1306px;
+}
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
 }
