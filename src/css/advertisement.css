@@ -1,3 +1,48 @@
 .adv {
-    color: brown;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.91667;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+.button {
+  width: 160px;
+  height: 48px;
+}
+
+.choose {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url(../fonts/img.adv.jpg);
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 30px;
+  width: 1150px;
+  height: 298px;
+  margin: 0 auto;
+  padding: 83px;
+}
+@media screen and (max-width: 768px) and (min-resolution: 2x) {
+  .choose {
+    background-image: linear-gradient(0 4px 4px 0 rgba(0, 0, 0, 0.25)),
+      url(../fonts/img.adv.jpg);
+  }
+}
+@media screen and (min-width: 767px) {
+  .choose {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), url(../fonts/img.adv.jpg);
+  }
+}
+@media screen and (min-width: 767px) and (min-resolution: 2x) {
+  .choose {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), url(../fonts/img.adv.jpg);
+  }
+}
+span {
+  color: rgba(251, 251, 251, 0.5);
 }
