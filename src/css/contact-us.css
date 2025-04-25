@@ -112,8 +112,6 @@
     margin-bottom: 40px;
   }
 
-  .contact-content {
-  }
   .contact-text {
     font-size: 16px;
     line-height: 1.25;
@@ -161,6 +159,8 @@
     padding-right: 60px;
     padding-left: 60px;
     margin-right: 40px;
+    height: 556px;
+    width: 580px;
   }
   .img-watch {
     max-width: 530px;
