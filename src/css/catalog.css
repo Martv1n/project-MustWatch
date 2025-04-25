@@ -1,7 +1,8 @@
 .catalog-one {
 padding: 0px 20px;
     width: 375px;
-    height: auto;
+    height: 1660px;
+    
 }
 
 .catalog {
@@ -11,16 +12,12 @@ padding: 0px 20px;
         letter-spacing: -0.02em;
         color: #0c0c0c;
         margin-bottom: 24px;
+     
 }
 
 .catalog-page {
 width: 335px;
-    height: 1516px;
-}
-
-.catalog-div {
-width: 279px;
-    height: 262px;
+    height: 1604px;
 }
 
 .catalog-logi {
@@ -34,6 +31,12 @@ width: 279px;
             justify-content: center;
 }
 
+.catalog-div {
+width: 279px;
+    height: 316px;
+}
+
+
 .catalog-img {
 width: 279px;
     height: 262px;
@@ -41,11 +44,12 @@ width: 279px;
 
 .catalog-logi-page {
 width: 279px;
+    height: 44px;
    
-    padding-top: 10px;
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-bottom: 24px;
+   padding-top: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 28px;
 }
 
 .catalog-page-logi {
@@ -60,7 +64,7 @@ font-weight: 500;
 .catalog-taxt {
 font-weight: 400;
     font-size: 14px;
-    line-height: 1.28571;
+    line-height: 1.28;
     letter-spacing: -0.02em;
     color: rgba(12, 12, 12, 0.5);
 }
@@ -90,13 +94,85 @@ border-radius: 16px;
 }
 
 @media screen and (min-width: 768px) {
+.catalog-one {
+    padding: 0; 
+         width: 0; 
+         height: 0;
+    }
+.gupon {
+    min-width: 768px;
+            min-height: 1390px;
+    padding: 0px 32px;
+}
+    
+.catalog {
+    margin-bottom: 40px;
+    font-size: 48px;
+}
 .catalog-page {
-    width: 704px;
-        height: 1306px;
+width: auto;
+    height: 414px;
+            display: flex;
+                flex-wrap: wrap;
+                gap: 32px 16px;
+                justify-content: center;
+    }
+
+         .catalog-logi {
+                flex-basis: calc((100% - 24px) / 2);
+             margin-bottom: 0;
+         }
+
+        .catalog-div {
+    width: 280px;
+        height: 366px;
+           
+            
+        }
+
+                .catalog-img {
+                 
+                }
+
+.catalog-logi-page {
+    width: auto;
+    height: auto;
+    padding-top: 10px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 24px;
 }
 
-}
+ .catalog-page-logi {
+     font-size: 20px;
+     line-height: 1;
+ }
 
+/*.catalog-logi-page {
+display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}*/
+
+   .heets {
+       display: block;
+        flex-basis: calc((100% - 24px) / 2);
+            margin-bottom: 0;
+   }
+
+   .heets {
+      
+       flex-basis: calc((100% - 24px) / 2);
+       margin-bottom: 0;
+   }
+
+.button-two {
+    display: none;
+}
+       
+}
 
 @media screen and (min-width: 1280px) {
 
