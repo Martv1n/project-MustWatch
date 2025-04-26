@@ -2,7 +2,6 @@
 
 .sale-title {
     margin-bottom: 24px;
-    font-weight: 600;
         font-size: 32px;
         line-height: 1;
         letter-spacing: -0.02em;
@@ -14,22 +13,22 @@
 
 .sale-thumbnails {
     display: flex;
-    flex-direction: row;
     gap: 5px;
     margin-bottom: 20px;
 }
 
 .sale-thumbnail {
-    padding: 13px 14px;
+    padding: 12px 13px;
     border: 1px solid rgba(12, 12, 12, 0.05);
     border-radius: 16px;
     background-color: #f3f3f3;
+   
 }
 
 
 
 .sale-main-image {
-    padding: 50px;
+    padding: 49px;
     border: 1px solid rgba(12, 12, 12, 0.05);
     border-radius: 30px;
     background-color: #f3f3f3;
@@ -99,7 +98,6 @@
 
 .sale-product-features {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;
 }
@@ -127,7 +125,6 @@
     }
 
     .sale-title{
-        font-weight: 600;
             font-size: 48px;
             line-height: 0.91667;
             letter-spacing: -0.02em;
@@ -189,10 +186,12 @@
 
 @media screen and ((min-width: 1280px)) {
     .sale-gallery {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
+         display: flex;
+      
     }
+        .sale-gallery>*:not(:last-child) {
+            margin-right: 40px;
+        }
 
     .sale-main-image {
         padding: 80px 50px;
