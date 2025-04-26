@@ -11,9 +11,7 @@
     background: #f3f3f3;
     padding: 32px 36px;
     border-radius: 30px;
-}
-.reviews-item {
-    width: 100%;
+    reviews-item:
 }
 .reviews-item:not(:first-child){
     display: none;
@@ -57,12 +55,10 @@
         display: flex;
         gap: 16px;
     }
-
     .reviews-author-name {
         font-size: 18px;
         line-height: 1.1;
     }
-
     .reviews-text {
         font-size: 16px;
         line-height: 1.25;
@@ -74,8 +70,7 @@
         }
         .reviews-item {
             width: calc((100% - 2 * 16) / 3);
-        }
-        
+        }      
         .reviews-item:nth-child(3) {
             display: block;
         }
