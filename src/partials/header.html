@@ -1,13 +1,11 @@
-<!-- header section -->
-<header id="header" class="page-header">
+<header class="page-header">
   <div class="container container-header">
     <a class="logo logo-header" href="./index.html">watchcharm</a>
-    <!-- menu - burger -->
     <button
       class="mobile-menu-open-btn is-open-menu"
       type="button"
       aria-expanded="false"
-      aria-controls="mobile-menu"
+      data-menu-open="mobile-menu"
     >
       <svg
         class="svg-icon-menu"
@@ -18,7 +16,6 @@
         <use href="/img/icon.svg#icon-menu"></use>
       </svg>
     </button>
-    <!-- nav menu -->
     <nav class="page-nav">
       <ul class="nav-list">
         <li class="nav-list-item">
@@ -41,7 +38,6 @@
         </li>
       </ul>
     </nav>
-    <!-- social media -->
     <ul class="social-list">
       <li class="social-list-item">
         <a
@@ -96,10 +92,13 @@
       </li>
     </ul>
   </div>
-  <!-- MOB MENU (is-open)-->
-  <div class="mob-menu js-menu-container is-open" id="mobile-menu">
+  <div class="mob-menu js-menu-container is-ope" data-menu="mobile-menu">
     <div class="mob-menu-container">
-      <button class="mob-menu-btn js-close-menu" type="button">
+      <button
+        class="mob-menu-btn js-close-menu"
+        type="button"
+        data-menu-close="mobile-menu"
+      >
         <svg
           class="mob-menu-close-icon"
           width="20"
