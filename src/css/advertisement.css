@@ -6,26 +6,23 @@
   color: #fbfbfb;
 }
 .button {
-  width: 160px;
+  width: 160x;
   height: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 16px;
 }
 
 .choose {
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  background-image: url(../fonts/img.adv.jpg);
-
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  border-radius: 30px;
-  width: 1150px;
-  height: 298px;
   margin: 0 auto;
-  padding: 83px;
+  background-image: url(../img/adv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1150px;
+  height: 298pxgit stta;
 }
 @media screen and (max-width: 768px) and (min-resolution: 2x) {
   .choose {
