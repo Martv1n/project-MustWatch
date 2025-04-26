@@ -1,15 +1,24 @@
-.reviews-section {
-  padding: 50px 0;
+.reviews {
   font-family: 'Gilroy', sans-serif;
+  padding: 0px 65px;
+  width: 1280px;
+  height: 356px;
 }
 
 .reviews-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92%;
+  letter-spacing: -0.02em;
   margin-bottom: 40px;
+  color: #0c0c0c;
 }
 
 .reviews-list {
-  display: grid;
-  grid-template-columns: 1fr; /* Mobile: 1 карточка */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
   gap: 20px;
   list-style: none;
   padding: 0;
@@ -17,43 +26,89 @@
 }
 
 .reviews-item {
-  background-color: #f9f9f9;
-  border-radius: 16px;
-  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 30px;
+  padding: 32px 36px;
+  width: 370px;
+  height: 272px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.reviews-item-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
+.reviews-image {
+  border-radius: 100%;
+  stroke-width: 2px;
+  stroke: #fbfbfb;
 }
 
-.reviews-author-name {
+.reviews-name {
+  font-weight: 500;
   font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-transform: capitalize;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #0c0c0c;
+  margin-bottom: 8px;
 }
 
 .reviews-text {
-  font-size: 14px;
-  color: #555;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(12, 12, 12, 0.4);
 }
 
-/* Tablet: від 768px — 2 карточки */
-@media (min-width: 768px) {
+/* Планшети від 768px */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .reviews {
+    padding: 0 32px;
+    width: 100%;
+    height: auto;
+  }
+
   .reviews-list {
-    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .reviews-item {
+    width: calc(50% - 10px);
+    max-width: 370px;
+    height: auto;
+  }
+
+  .reviews-item:nth-child(3) {
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
   }
 }
 
-/* Desktop: від 1280px — 3 карточки */
-@media (min-width: 1280px) {
+/* Телефони до 767px */
+@media (max-width: 767px) {
+  .reviews {
+    padding: 0 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .reviews-title {
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
   .reviews-list {
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews-item {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    padding: 28px 24px;
   }
 }
