@@ -129,6 +129,7 @@
     padding: 16px 18px;
     min-width: 460px;
     font-size: 16px;
+    line-height: 1.25;
   }
   .form-input.area {
     min-height: 90px;
@@ -139,9 +140,6 @@
     min-width: 160px;
     min-height: 52px;
     padding: 17px 63px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
   }
   .img-watch {
     border-radius: 50px;
@@ -159,10 +157,12 @@
     padding-right: 60px;
     padding-left: 60px;
     margin-right: 40px;
+    margin-bottom: 0;
     height: 556px;
     width: 580px;
   }
   .img-watch {
     max-width: 530px;
+    height: 556px;
   }
 }
