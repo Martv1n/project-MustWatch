@@ -1,4 +1,4 @@
-.rewiews-section {
+.reviews-section {
     padding: 30px 0;
 }
 .reviews-title {
@@ -13,13 +13,18 @@
     border-radius: 30px;
 }
 .reviews-item {
-    max-width: 335px;
+    width: 100%;
 }
 
-.reviews-item:nth-child(2),
+/* .reviews-item:nth-child(2),
 .reviews-item:nth-child(3) {
     display: none;
-}
+} */
+
+.reviews-item:not(:first-child){
+    display: none;
+} 
+
 .reviews-item-img {
     margin: 0 auto;
     margin-bottom: 24px;
@@ -42,14 +47,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .rewiews-section {
+    .reviews-section {
         padding: 40px 0;
     }
     .reviews-title {
         margin-bottom: 40px;
     }
     .reviews-item {
-        max-width: 344px;
+       width: calc((100% - 16) / 2);
     }
     
     .reviews-item:nth-child(2) {
@@ -71,11 +76,11 @@
     }
 }
     @media only screen and (min-width: 1280px) {
-        .rewiews-section {
+        .reviews-section {
             padding: 50px 0;
         }
         .reviews-item {
-            max-width: 370px;
+            width: calc((100% - 2 * 16) / 3);
         }
         
         .reviews-item:nth-child(3) {
