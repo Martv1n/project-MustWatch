@@ -1,114 +1,97 @@
-.reviews {
-  font-family: 'Gilroy', sans-serif;
-  padding: 0px 65px;
-  width: 1280px;
-  height: 356px;
+/* section */
+.reviews-section {
+  padding: 30px 0;
 }
 
+/* title */
 .reviews-title {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 92%;
-  letter-spacing: -0.02em;
-  margin-bottom: 40px;
-  color: #0c0c0c;
+  margin-bottom: 24px;
 }
 
+/* list */
 .reviews-list {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  text-align: center;
 }
 
+/* card */
 .reviews-item {
   background: #f3f3f3;
-  border-radius: 30px;
   padding: 32px 36px;
-  width: 370px;
-  height: 272px;
-  text-align: center;
+  border-radius: 30px;
+  width: 100%;
+  list-style: none;
+}
+.reviews-item:not(:first-child) {
+  display: none;
+}
+.reviews-item-img {
+  margin: 0 auto;
+  margin-bottom: 24px;
 }
 
-.reviews-image {
-  border-radius: 100%;
-  stroke-width: 2px;
-  stroke: #fbfbfb;
-}
-
-.reviews-name {
+/* name user */
+.reviews-author-name {
+  text-transform: capitalize;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 110%;
+  font-size: 16px;
+  line-height: 1.25;
   letter-spacing: -0.02em;
-  text-align: center;
   color: #0c0c0c;
   margin-bottom: 8px;
 }
-
 .reviews-text {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
+  font-size: 14px;
+  line-height: 1.28;
   letter-spacing: -0.02em;
-  text-align: center;
   color: rgba(12, 12, 12, 0.4);
 }
 
-/* Планшети від 768px */
-@media (min-width: 768px) and (max-width: 1279px) {
-  .reviews {
-    padding: 0 32px;
-    width: 100%;
-    height: auto;
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .reviews-section {
+    padding: 40px 0;
   }
-
-  .reviews-list {
-    flex-wrap: wrap;
-    justify-content: center;
+  .reviews-title {
+    margin-bottom: 40px;
   }
-
   .reviews-item {
-    width: calc(50% - 10px);
-    max-width: 370px;
-    height: auto;
+    width: calc((100% - 16) / 2);
   }
 
-  .reviews-item:nth-child(3) {
-    width: 100%;
-    max-width: 370px;
-    margin: 0 auto;
+  .reviews-item:nth-child(2) {
+    display: block;
+  }
+  .reviews-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  .reviews-author-name {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+
+  .reviews-text {
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
-/* Телефони до 767px */
-@media (max-width: 767px) {
-  .reviews {
-    padding: 0 20px;
-    width: 100%;
-    height: auto;
+/* laptop */
+@media only screen and (min-width: 1280px) {
+  .reviews-section {
+    padding: 50px 0;
   }
-
-  .reviews-title {
-    font-size: 32px;
-    margin-bottom: 32px;
-    text-align: center;
-  }
-
-  .reviews-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .reviews-item {
-    width: 100%;
-    max-width: 370px;
-    height: auto;
-    padding: 28px 24px;
+    width: calc((100% - 2 * 16) / 3);
+  }
+
+  .reviews-item:nth-child(3) {
+    display: block;
+  }
+  .reviews-list {
+    display: flex;
+    gap: 20px;
   }
 }
