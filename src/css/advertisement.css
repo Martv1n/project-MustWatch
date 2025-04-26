@@ -4,17 +4,23 @@
   line-height: 0.91667;
   letter-spacing: -0.02em;
   color: #fbfbfb;
+  text-align: center;
+  margin: 0px;
 }
 .button {
-  width: 160x;
+  width: 160px;
   height: 48px;
   position: absolute;
-  top: 0;
-  right: 0;
+
   margin: 16px;
+  top: 16px;
+  right: 16px;
 }
 
 .choose {
+  position: relative;
+  padding: 83px 80px;
+  box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
   background-image: url(../img/adv.jpg);
@@ -22,7 +28,8 @@
   background-size: cover;
   background-position: center;
   width: 1150px;
-  height: 298pxgit stta;
+  height: 298px;
+  border-radius: 30px;
 }
 @media screen and (max-width: 768px) and (min-resolution: 2x) {
   .choose {
