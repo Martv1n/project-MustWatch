@@ -15,16 +15,9 @@
 .reviews-item {
     width: 100%;
 }
-
-/* .reviews-item:nth-child(2),
-.reviews-item:nth-child(3) {
-    display: none;
-} */
-
 .reviews-item:not(:first-child){
     display: none;
 } 
-
 .reviews-item-img {
     margin: 0 auto;
     margin-bottom: 24px;
