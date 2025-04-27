@@ -74,8 +74,20 @@
     color: #fbfbfb;
 }
 
+.button-two:hover {
+background-color: #3350E9;
+}
+
+.button-two:focus {
+background-color: #1F3CD4;
+}
+
 @media screen and (min-width: 768px) {
-    
+
+.catalog-one {
+        padding: 40px 0;
+    }
+
 .catalog {
     margin-bottom: 40px;
     font-size: 48px;
@@ -83,7 +95,10 @@
 
 .catalog-page {
     gap: 32px 16px;
-    justify-content: center;
+}
+
+.catalog-logi {
+padding: 23px 31px;
 }
 
 .catalog-img {
@@ -114,6 +129,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+.catalog-one {
+        padding: 50px 0;
+}
 
 .catalog-page {
     gap: 32px 23px;
