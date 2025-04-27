@@ -18,7 +18,7 @@
   display: none;
 }
 .reviews-image {
-  margin: 0 auto;
+  display: block;
   margin-bottom: 24px;
 }
 
