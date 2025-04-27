@@ -22,6 +22,10 @@
   margin-bottom: 24px;
 }
 
+.reviews-item-img {
+  margin: 0 auto;
+}
+
 /* name user */
 .reviews-author-name {
   text-transform: capitalize;
