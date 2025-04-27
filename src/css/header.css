@@ -3,42 +3,40 @@
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 20px 0; /* Для мобільних пристроїв */
+  background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
-  z-index: 10;
+  z-index: 400;
 }
 
 .container-header {
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 30px 16px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1279px) {
-  .page-header {
-    padding: 26px 0; /* Оновлено згідно макету */
-  }
-  .container-header {
-    max-width: 768px;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+/* ===== BURGER BUTTON ===== */
+.mobile-menu-open-btn {
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  fill: #2f2f37;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 200;
 }
 
-/* Desktop */
-@media (min-width: 1280px) {
-  .page-header {
-    padding: 26px 0; /* Оновлено згідно макету */
-  }
-  .container-header {
-    max-width: 1280px;
-    padding-left: 65px;
-    padding-right: 65px;
-  }
+.mobile-menu-open-btn:hover,
+.mobile-menu-open-btn:focus {
+  transform: scale(1.1);
+}
+
+.svg-icon-menu {
+  fill: #000;
 }
 
 /* ===== LOGO ===== */
@@ -54,29 +52,6 @@
 .logo-header:focus {
   transform: scale(1.1);
   opacity: 0.8;
-}
-
-/* ===== BURGER BUTTON ===== */
-.mobile-menu-open-btn {
-  width: 34px;
-  height: 34px;
-  background: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-  fill: #2f2f37;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 20;
-}
-
-.mobile-menu-open-btn:hover,
-.mobile-menu-open-btn:focus {
-  transform: scale(1.1);
-}
-
-.svg-icon-menu {
-  fill: #000;
 }
 
 /* ===== NAVIGATION ===== */
@@ -106,10 +81,8 @@
   display: block;
   padding: 10px 0;
   text-transform: capitalize;
-}
-
-.nav-list-item-link:is(.current, :hover, :focus) {
   color: #0c0c0c;
+  position: relative;
 }
 
 .nav-list-item-link::after {
@@ -161,25 +134,38 @@
 }
 
 /* ===== MOBILE MENU ===== */
+.mob-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 299;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+}
+
+.mob-menu-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
 .mob-menu {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
-  max-width: 300px;
   height: 100%;
   background: #0c0c0c url('/img/header/menu-mob.jpg') no-repeat center/cover;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  z-index: 30;
+  z-index: 300;
   overflow-y: auto;
 }
 
-.mob-menu.is-open {
-  transform: translateX(0);
-}
-
-/* Retina image for mobile menu */
+/* Retina image */
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -253,7 +239,6 @@
 .mob-menu-item-link:hover,
 .mob-menu-item-link:focus {
   transform: scale(1.05);
-  font-weight: 700;
 }
 
 .mob-menu-item-link::after {
@@ -293,28 +278,52 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-menu-social-list-item-link:hover,
-.mob-menu-social-list-item-link:focus {
-  fill: #fbfbfb;
+/* ===== RESPONSIVE ===== */
+
+/* Mobile menu open */
+@media (max-width: 767px) {
+  .mob-menu {
+    max-width: 200px;
+  }
+  .mob-menu.is-open {
+    transform: translateX(calc(50% - 100px));
+  }
 }
 
-/* Mobile first: hide desktop nav */
+/* Tablet menu open */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .container-header {
+    max-width: 768px;
+    padding: 30px 24px 40px;
+  }
+  .mob-menu {
+    max-width: 330px;
+  }
+  .mob-menu.is-open {
+    transform: translateX(calc(50% - 165px));
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .container-header {
+    max-width: 1280px;
+    padding: 30px 65.5px 40px;
+  }
+  .mobile-menu-open-btn,
+  .mob-menu,
+  .mob-menu-overlay {
+    display: none;
+  }
+}
+
+/* Hide navigation and socials on mobile and tablet */
 @media (max-width: 1279px) {
   .page-nav,
   .social-list-item {
     display: none;
   }
-
   .mobile-menu-open-btn {
-    position: static;
     margin-left: auto;
-  }
-}
-
-/* Desktop: hide mobile menu */
-@media (min-width: 1280px) {
-  .mobile-menu-open-btn,
-  .mob-menu {
-    display: none;
   }
 }
