@@ -1,7 +1,6 @@
 /* section */
 .reviews-section {
   padding: 30px 0;
-  font-family: 'Gilroy', sans-serif;
 }
 
 /* title */
@@ -19,7 +18,6 @@
   background: #f3f3f3;
   padding: 32px 36px;
   border-radius: 30px;
-  width: 100%;
   list-style: none;
 }
 .reviews-item:not(:first-child) {
@@ -35,15 +33,15 @@
   text-transform: capitalize;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 125%;
   letter-spacing: -0.02em;
+  text-align: center;
   color: #0c0c0c;
-  margin-bottom: 8px;
 }
 .reviews-text {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
+  font-size: 14px;
+  line-height: 129%;
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(12, 12, 12, 0.4);
@@ -56,9 +54,6 @@
   }
   .reviews-title {
     margin-bottom: 40px;
-  }
-  .reviews-item {
-    width: calc((100% - 16) / 2);
   }
 
   .reviews-item:nth-child(2) {
@@ -85,15 +80,11 @@
   .reviews-section {
     padding: 50px 0;
   }
-  .reviews-item {
-    width: calc((100% - 2 * 16) / 3);
-  }
 
   .reviews-item:nth-child(3) {
     display: block;
   }
   .reviews-list {
-    display: flex;
     gap: 20px;
   }
 }
