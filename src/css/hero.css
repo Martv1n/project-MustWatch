@@ -1,11 +1,13 @@
 
 .hero{
-padding-bottom: 30px;;
+padding-bottom: 30px;
+padding-top: 60px;
 }
 
 @media screen and (min-width:768px){
     .hero{
         padding-bottom: 40px;
+        padding-top: 80px;
     }
 }
 @media screen and (min-width:1280px){
@@ -22,7 +24,6 @@ padding-bottom: 30px;;
     .text-and-pic{
         flex-wrap: nowrap;
         margin-bottom: 40px;
-        /* margin-right: 11px; */
     }
 }
 @media screen and (min-width:1280px) {
@@ -33,19 +34,20 @@ padding-bottom: 30px;;
 }
 
 .div-hero-text{
-width: 335px;
+
 align-items: start;
+margin-bottom: 28px;
 
 }
 @media screen and (min-width:768px){
     .div-hero-text{
-        width: 557px;
+        
         margin-right: 11px;
+        margin-bottom: 0;
     }
 }
 @media screen and (min-width:1280px) {
     .div-hero-text{
-        width: 597px;
         margin-right:407px;
     }
 }.title-hero{
@@ -56,6 +58,7 @@ align-items: start;
     letter-spacing: -0.02em;
     color: #0c0c0c;
     margin-bottom: 20px;
+    width: 335px;
 }
 @media screen and (min-width:768px) {
     .title-hero{
@@ -69,8 +72,8 @@ align-items: start;
         font-weight: 600;
         font-size: 72px;
         line-height: 0.87;
-        width: 100%;
-}
+        width: 597px;
+    }
 }
 .hero-span{
     font-family: "Gilroy", sans-serif;
@@ -132,9 +135,7 @@ img{
 .profile-container {
     display: flex;
     align-items: center;
-
     margin-right: 155px;
-/*    width: 108px;*/
 }
 @media screen and (min-width:768px) {
     .profile-container {
@@ -149,18 +150,11 @@ img{
     margin-bottom: 189px;
     }
 }
-/*@media screen and(min-width:768px) {
-    .profile-container{
-        width: 136px;
-    }
-}*/
 
 .hero-pic {
     width:44px;
     height:44px;
-/*    stroke-width: 2px;
-    stroke: #fbfbfb;
-*/    object-fit: cover;
+    object-fit: cover;
     margin-left: -12px
 }
 @media screen and (min-width:768px) {
@@ -169,6 +163,9 @@ img{
         height: 56px;
         margin-left: -15px;
     }
+    .hero-pic:last-child{
+        margin-left: -17px;
+    }
 }
 @media screen and (min-width:1280px) {
     .hero-pic{
@@ -176,38 +173,34 @@ img{
         height: 60px;
         margin-left: -16px;
     }
+                .hero-pic:last-child {
+                    margin-left: -18px;
+                }
 }
 .hero-pic:first-child {
     margin-left: 0;
-    /* no overlap on the first image */
 }
 
 .hero-scroll{
     font-family: "Gilroy", sans-serif;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.28571;
+    line-height: 129%;
     letter-spacing: -0.02em;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #0c0c0c;
     width: 72px;
-/*    height: 18px;  */
 }
 .hero-scroll:hover,
 .hero-scroll:focus{
-/*    font-weight: 500;
-    font-size: 14px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;*/
     color: #3350e9;
 }
 @media screen and (min-width:768px) {
     .hero-scroll{
 font-size: 20px;
 width: 102px;
+    line-height: 100%;
     }
 }
 .hero-watch{
