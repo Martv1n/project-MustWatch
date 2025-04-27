@@ -1,6 +1,3 @@
-.advertisement {
-  padding: 30px 0;
-}
 .adv {
   width: 100%;
   max-width: 279px;
@@ -47,7 +44,6 @@
   .choose {
     padding: 80px 64px;
     background-image: url(/img/tablet.png), linear-gradient(#0c0c0c, #0c0c0c);
-    background-position: center;
   }
   .adv {
     max-width: 576px;
@@ -69,8 +65,6 @@
     display: flex;
   }
   .button {
-    width: 160x;
-    height: 48px;
     margin-left: 140px;
     margin-top: 0;
   }
