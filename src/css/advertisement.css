@@ -24,6 +24,12 @@
   display: block;
   margin-top: 28px;
 }
+
+.button:hover,
+.button:focus {
+  color: #0c0c0c;
+  background-color: #fbfbfb;
+}
 .choose {
   padding: 60px 28px;
   background-image: url(/img/mobile.png), linear-gradient(#0c0c0c, #0c0c0c);
