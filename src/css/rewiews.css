@@ -1,6 +1,7 @@
 /* section */
 .reviews-section {
   padding: 30px 0;
+  font-family: 'Gilroy', sans-serif;
 }
 
 /* title */
@@ -41,9 +42,10 @@
 }
 .reviews-text {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28;
+  font-size: 16px;
+  line-height: 125%;
   letter-spacing: -0.02em;
+  text-align: center;
   color: rgba(12, 12, 12, 0.4);
 }
 
