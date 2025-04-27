@@ -1,6 +1,9 @@
+.advertisement {
+  padding: 30px 0;
+}
 .adv {
-  margin: 0px;
-  max-width: 690px;
+  width: 100%;
+  max-width: 279px;
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
@@ -13,8 +16,6 @@
   background: transparent;
   color: #fbfbfb;
   border: 1px solid rgba(251, 251, 251, 0.5);
-  cursor: pointer;
-  top: 255px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28571;
@@ -23,80 +24,57 @@
   display: block;
   margin-top: 28px;
 }
-.advert {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
 .choose {
   padding: 60px 28px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  background-image: url(../img/mobile.png), linear-gradient(#0c0c0c, #0c0c0c);
+  background-image: url(/img/mobile.png), linear-gradient(#0c0c0c, #0c0c0c);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 30px;
-  margin-bottom: 100px;
-  margin-top: 100px;
 }
-
-@media screen and (max-width: 768px) and (min-resolution: 2x) {
+@media screen and (max-width: 767px) and (min-resolution: 2x) {
   .choose {
-    background-image: url(../img/mobiletwo.png),
-      linear-gradient(#0c0c0c, #0c0c0c);
+    background-image: url(/img/mobiletwo.png), linear-gradient(#0c0c0c, #0c0c0c);
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .choose {
-    padding: 80px 60px;
-    background-image: url(../img/tablet.png), linear-gradient(#0c0c0c, #0c0c0c);
-    width: 704px;
-    height: 425px;
-    background-size: contain;
+    padding: 80px 64px;
+    background-image: url(/img/tablet.png), linear-gradient(#0c0c0c, #0c0c0c);
     background-position: center;
   }
-
   .adv {
-    font-weight: 600;
+    max-width: 576px;
     font-size: 48px;
     line-height: 0.91667;
-    letter-spacing: -0.02em;
   }
   .button {
-    margin: 0;
-    display: block;
     margin-top: 32px;
   }
 }
-
-@media screen and (min-width: 767px) and (min-resolution: 2x) {
+@media screen and (min-width: 768px) and (min-resolution: 2x) {
   .choose {
-    background-image: url(../img/tablettwo.png),
-      linear-gradient(#0c0c0c, #0c0c0c);
+    background-image: url(/img/tablettwo.png), linear-gradient(#0c0c0c, #0c0c0c);
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .choose {
-    background-image: url(../img/advv.png), linear-gradient(#0c0c0c, #0c0c0c);
-    width: 1150px;
-    height: 298px;
+    background-image: url(/img/advv.png), linear-gradient(#0c0c0c, #0c0c0c);
+    display: flex;
   }
   .button {
     width: 160x;
     height: 48px;
-    top: 0;
-    right: 0;
     margin-left: 140px;
     margin-top: 0;
   }
-  .advert {
-    flex-direction: row;
+  .adv {
+    max-width: 690px;
   }
 }
-@media screen and (min-width: 1158px) and (min-resolution: 2x) {
+@media screen and (min-width: 1280px) and (min-resolution: 2x) {
   .choose {
-    background-image: url(../img/adv.png), linear-gradient(#0c0c0c, #0c0c0c);
+    background-image: url(/img/adv.png), linear-gradient(#0c0c0c, #0c0c0c);
   }
 }
 span {
