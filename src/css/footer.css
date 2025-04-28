@@ -57,12 +57,6 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .footer-link-group {
-    margin-bottom: 142px;
-  }
-}
-
 .footer-link-group-logo {
   margin-bottom: 20px;
 }
@@ -173,10 +167,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .footer-link-group {
-    margin-bottom: 86px;
-  }
-
   .footer-slogan {
     width: 524px;
     font-size: 28px;
@@ -186,12 +176,12 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .footer-link-group {
+  .footer-start-part {
+    position: relative;
     margin-bottom: 142px;
   }
 
-  .footer-start-part {
-    position: relative;
+  .footer-link-group {
     margin-bottom: 0;
   }
   .footer-slogan {
