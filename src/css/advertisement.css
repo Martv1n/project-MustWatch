@@ -11,8 +11,7 @@
   color: #fbfbfb;
 }
 .button {
-  width: 160px;
-  height: 48px;
+  padding: 14px 43px;
   background: transparent;
   color: #fbfbfb;
   border: 1px solid rgba(251, 251, 251, 0.5);
@@ -21,7 +20,7 @@
   line-height: 1.28571;
   text-align: center;
   border-radius: 16px;
-  display: block;
+  display: inline-block;
   margin-top: 28px;
 }
 
@@ -73,6 +72,7 @@
   .button {
     margin-left: 140px;
     margin-top: 0;
+    max-height: 48px;
   }
   .adv {
     max-width: 690px;
