@@ -16,25 +16,36 @@
               class="form-input"
               required
               placeholder="Name"
+              pattern="[A-Za-z ]{1,32}"
             />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="form-input"
-              required
-              placeholder="Email"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            />
-            <input
-              type="tel"
-              name="tel"
-              id="tel"
-              class="form-input"
-              required
-              placeholder="+380"
-              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-            />
+            <div class="email-field">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                required
+                placeholder="Email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              />
+              <p class="text-valid">Succes!</p>
+              <p class="text-invalid">Invalid email, try again</p>
+            </div>
+
+            <div class="tel-field">
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="form-input"
+                required
+                placeholder="+380-XX-XXX-XX-XX"
+                pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+              />
+              <p class="text-valid">Success!</p>
+              <p class="text-invalid">Invalid phone number, try again</p>
+            </div>
+
             <textarea
               name="user-comment"
               id="user-comment"

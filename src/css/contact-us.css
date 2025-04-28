@@ -67,6 +67,55 @@
   color: #0c0c0c;
 }
 
+.email-field,
+.tel-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 279px;
+}
+
+.form-input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+.form-input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+.email-field .text-valid,
+.email-field .text-invalid,
+.tel-field .text-valid,
+.tel-field .text-invalid {
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 4px;
+  display: none;
+}
+
+.text-valid {
+  color: green;
+}
+
+.text-invalid {
+  color: red;
+}
+
+.email-field .form-input:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.email-field .form-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.tel-field .form-input:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+.tel-field .form-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
 .form-input.area {
   display: block;
   font-family: 'Gilroy', sans-serif;
