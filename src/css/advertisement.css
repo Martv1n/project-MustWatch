@@ -1,3 +1,6 @@
+.advertisement {
+  padding: 30px 0;
+}
 .adv {
   width: 100%;
   max-width: 279px;
@@ -53,6 +56,9 @@
   .button {
     margin-top: 32px;
   }
+  .advertisement {
+    padding: 40px 0;
+  }
 }
 @media screen and (min-width: 768px) and (min-resolution: 2x) {
   .choose {
@@ -70,6 +76,9 @@
   }
   .adv {
     max-width: 690px;
+  }
+  .advertisement {
+    padding: 50px 0;
   }
 }
 @media screen and (min-width: 1280px) and (min-resolution: 2x) {
