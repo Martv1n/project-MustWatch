@@ -1,20 +1,22 @@
 /* -------FOOTER--------- */
 
-.footer-container {
+.footer {
   padding-top: 30px;
   padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  .footer-container {
+  .footer {
     padding-top: 40px;
     padding-bottom: 32px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .footer-container {
+  .footer {
     padding-top: 50px;
+  }
+  .footer-container {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -28,9 +30,17 @@
   width: 100%;
 }
 
+.footer-start-part {
+  margin-bottom: 92px;
+}
+
 @media only screen and (min-width: 768px) {
   .footer-wrap {
     padding: 40px 40px 28px;
+  }
+
+  .footer-start-part {
+    margin-bottom: 100px;
   }
 }
 
@@ -47,6 +57,10 @@
   }
 }
 
+.footer-link-group-logo {
+  margin-bottom: 20px;
+}
+
 .footer-logo {
   display: block;
   font-weight: 500;
@@ -61,7 +75,6 @@
   align-items: center;
   justify-content: start;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -71,6 +84,10 @@
 
   .footer-social-list {
     margin-bottom: 0;
+  }
+
+  .footer-link-group-logo {
+    margin-bottom: 0px;
   }
 }
 
@@ -84,6 +101,7 @@
   border-radius: 10px;
   width: 34px;
   height: 34px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
@@ -107,6 +125,12 @@
 .footer-social-link:focus .footer-social-icon,
 .footer-social-link:active .footer-social-icon {
   fill: #fbfbfb;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus,
+.footer-social-link:active {
+  border-color: #fbfbfb;
 }
 
 .contact-tel-link {
@@ -140,7 +164,6 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: #fbfbfb;
-  margin-bottom: 92px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -148,23 +171,24 @@
     width: 524px;
     font-size: 28px;
     line-height: 1.14;
-    margin: 0 auto 100px;
+    margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .footer-link-group {
-    margin-bottom: 142px;
-  }
   .footer-start-part {
     position: relative;
+    margin-bottom: 142px;
+  }
+
+  .footer-link-group {
+    margin-bottom: 0;
   }
   .footer-slogan {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 0;
   }
 }
 
@@ -304,11 +328,10 @@
   }
 
   .footer-copyright,
-.aggriment-link {
-  font-size: 14px;
-  line-height: 1.29;
-
-}
+  .aggriment-link {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 
   .footer-copyright {
     margin-bottom: 0;
