@@ -16,9 +16,9 @@
     src: url('Gilroy-Semibold.eot');
     src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
         url('Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Semibold.woff2') format('woff2'),
-        url('Gilroy-Semibold.woff') format('woff'),
-        url('Gilroy-Semibold.ttf') format('truetype');
+        url(/fonts/Gilroy-Semibold.woff2) format('woff2'),
+        url(/fonts/Gilroy-Semibold.woff) format('woff'),
+        url(/fonts/Gilroy-Semibold.ttf) format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -29,9 +29,9 @@
     src: url('Gilroy-Medium.eot');
     src: local('Gilroy Medium'), local('Gilroy-Medium'),
         url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Medium.woff2') format('woff2'),
-        url('Gilroy-Medium.woff') format('woff'),
-        url('Gilroy-Medium.ttf') format('truetype');
+        url(/fonts/Gilroy-Medium.woff2) format('woff2'),
+        url(/fonts/Gilroy-Medium.woff) format('woff'),
+        url(/fonts/Gilroy-Medium.ttf) format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
