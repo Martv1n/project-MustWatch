@@ -2,20 +2,20 @@
 .page-header {
   background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* ===== CONTAINER HEADER ===== */
 .container-header {
   display: flex;
-
   align-items: center;
-  padding: 20px;
 }
 
 /* ===== BURGER BUTTON ===== */
 .mobile-menu-open-btn {
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   background: transparent;
   border: none;
   padding: 0;
@@ -99,9 +99,6 @@
   display: flex;
   gap: 10px;
   align-items: center;
-}
-
-.social-list-item {
 }
 
 .social-list-item-link {
@@ -260,6 +257,17 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .logo-header {
+    font-size: 20px;
+  }
+
+.page-header {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+}
+
 /* Tablet menu open */
 @media (min-width: 768px) and (max-width: 1279px) {
   .mob-menu-container {
@@ -296,7 +304,6 @@
 @media (min-width: 1280px) {
   .container-header {
     justify-content: space-between;
-    padding: 26px 64.5px;
   }
 
   .mobile-menu-open-btn,
