@@ -77,6 +77,10 @@
   padding: 8px 12px;
 }
 
+
+.sale-images{
+    margin-bottom: 20px;
+}
 .sale-product-original-price {
   font-size: 12px;
   line-height: 117%;
@@ -206,7 +210,7 @@
   }
 
   .sale-images {
-    margin: 0;
+        margin-right: 40px;
   }
 
   .sale-product-title {
