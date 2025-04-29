@@ -1,0 +1,64 @@
+.location {
+    box-sizing: border-box;
+    padding: 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .location {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .location {
+        padding: 50px 0;
+    }
+}
+
+.location-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #0C0C0C;
+}
+
+@media screen and (min-width: 768px) {
+    .location-title {
+        font-size: 48px;
+        line-height: 92%;
+    }
+}
+
+.map-container {
+    width: 100%;
+    height: 500px;
+    margin-top: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 30px;
+    padding: 48px 28px;
+}
+
+@media screen and (min-width: 768px) {
+    .map-container {
+        height: 480px;
+        margin-top: 40px;
+        padding: 50px 50px;
+        border-radius: 50px;
+    }
+}
+
+.maps {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .maps {
+        border-radius: 50px;
+    }
+}

@@ -1,3 +1,223 @@
-.hero {
-    color: bisque;
+
+.hero{
+padding-bottom: 30px;
+padding-top: 60px;
+}
+
+@media screen and (min-width:768px){
+    .hero{
+        padding-bottom: 40px;
+        padding-top: 80px;
+    }
+}
+@media screen and (min-width:1280px){
+    .hero{
+        padding-bottom: 50px;
+    }
+}
+.text-and-pic{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+@media screen and (min-width:768px) {
+    .text-and-pic{
+        flex-wrap: nowrap;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .text-and-pic{
+
+        flex-wrap: nowrap;
+    }
+}
+
+.div-hero-text{
+
+align-items: start;
+margin-bottom: 28px;
+
+}
+@media screen and (min-width:768px){
+    .div-hero-text{
+        
+        margin-right: 11px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width:1280px) {
+    .div-hero-text{
+        margin-right:407px;
+    }
+}.title-hero{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    margin-bottom: 20px;
+    width: 100%;
+}
+@media screen and (min-width:768px) {
+    .title-hero{
+        width: 557px;
+        font-size: 70px;
+        line-height: 0.86;
+    }
+}
+@media screen and (min-width:1280px) {
+    .title-hero{
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 0.87;
+        width: 597px;
+    }
+}
+.hero-span{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: #3350e9;
+}
+@media screen and (min-width:768px) {
+    .hero-span {
+            font-size: 70px;
+            line-height: 0.86;
+            letter-spacing: -0.02em;
+        }
+}
+@media screen and (min-width:1280px) {
+    .hero-span{
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 0.88;
+        letter-spacing: -0.05em;
+    }
+}
+.hero-text{
+font-family: "Gilroy", sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+color: rgba(12, 12, 12, 0.7);
+height: 72px;
+width: 100%;
+}
+@media screen and (min-width:768px) {
+    .hero-text{
+        font-size: 16px;
+        line-height: 1.25;
+        height: 60px;
+        width: 480px;
+    }
+}
+
+.dev-hero-links{
+display: flex;
+align-items: flex-end;
+width: 100%;
+}
+@media screen and (min-width:768px) {
+    .dev-hero-links{
+
+        flex-direction: column;
+    }
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+@media screen and (min-width:768px) {
+    .profile-container {
+    margin-bottom: 184px;
+    margin-right: 0;
+    margin-left: auto;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .profile-container {
+    margin-bottom: 189px;
+    }
+}
+
+.hero-pic {
+    width:44px;
+    height:44px;
+    object-fit: cover;
+    margin-left: -12px
+}
+@media screen and (min-width:768px) {
+    .hero-pic{
+        width: 56px;
+        height: 56px;
+        margin-left: -15px;
+    }
+    .hero-pic:last-child{
+        margin-left: -17px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .hero-pic{
+        width: 60px;
+        height: 60px;
+        margin-left: -16px;
+    }
+                .hero-pic:last-child {
+                    margin-left: -18px;
+                }
+}
+.hero-pic:first-child {
+    margin-left: 0;
+}
+
+.hero-scroll{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #0c0c0c;
+    width: 72px;
+}
+.hero-scroll:hover,
+.hero-scroll:focus{
+    color: #3350e9;
+}
+@media screen and (min-width:768px) {
+    .hero-scroll{
+font-size: 20px;
+width: 102px;
+    line-height: 100%;
+    }
+}
+.hero-watch{
+    display: block;
+    width : 100%; 
+    height : 366px;
+}
+@media screen and (min-width:768px) {
+    .hero-watch{
+        width: 704px;
+        height: 520px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .hero-watch{
+        width: 1150px;
+        height: 500px;
+    }
 }
