@@ -43,7 +43,6 @@
     line-height: 1.25;
     letter-spacing: -0.02em;
     color: #0c0c0c;
-    width: 280px;
     margin-bottom: 8px;
 }
 
@@ -111,6 +110,7 @@ padding: 23px 31px;
  .catalog-page-logi {
     font-size: 20px;
     line-height: 1;
+    width: 280px;
 }
 
 .catalog-page-logi {
