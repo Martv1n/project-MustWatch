@@ -163,31 +163,4 @@ padding: 23px 31px;
 }
 }
 
- @media screen and (max-width: 374px) {
-.catalog-page {
-    justify-content: center;
-    display: grid;
-}
-    
-.catalog-logi {
-    padding: 16px 16px;
-}
 
-.catalog-img {
-    max-width: 180px;
-}
-
-.catalog-page-logi {
-    font-size: 14px;
-    width: 100%;
-}
-
-.catalog-taxt {
-    font-size: 12px;
-}
-
-.button-two {
-    padding: 12px 32px;
-    font-size: 13px;
-}
-}
