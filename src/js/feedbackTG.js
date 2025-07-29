@@ -16,8 +16,8 @@ form.addEventListener('submit', function (e) {
 💬 Коментар: ${comment}
 `;
 
-  const token = '7486210381:AAFJJ8IeVKshkignobys8cVNWzLFZCzd0Xs';
-  const chat_id = '1313421130';
+  const token = import.meta.env.VITE_TOKEN;
+  const chat_id = import.meta.env.VITE_CHAT_ID;
 
   const url = `https://api.telegram.org/bot${token}/sendMessage`;
 

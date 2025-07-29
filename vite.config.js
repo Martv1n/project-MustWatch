@@ -1,14 +1,17 @@
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
+  const env = loadEnv(command, process.cwd(), '');
   return {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
-    },
+      'import.meta.env.VITE_TOKEN': JSON.stringify(env.VITE_TOKEN),
+      'import.meta.env.VITE_CHAT_ID': JSON.stringify(env.VITE_CHAT_ID),
+    }, 
     root: 'src',
     build: {
       sourcemap: true,
